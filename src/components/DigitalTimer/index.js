@@ -67,7 +67,8 @@ class DigitalTimer extends Component {
 
   onResetTimer = () => {
     this.clearTimeInterval()
-    this.setState({isTimerRunning: false})
+    this.setState({isTimerRunning: false,timeElapsedInSeconds: 0,
+  timerLimitInMinutes: 25,})
   }
 
   incrementTimeElapsedInSeconds = () => {
